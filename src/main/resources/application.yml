@@ -1,0 +1,18 @@
+# General Configuration
+server:
+  port: 8181
+
+spring:
+  application:
+    name: Content-Negotiation-Application
+
+# Datasource Configuration
+  datasource:
+    url: jdbc:mysql://localhost:3306/cn_demo
+    username: root
+    password: admin
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
